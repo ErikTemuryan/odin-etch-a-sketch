@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, aqua, green, yellow );
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    width: 512px;
+    height: 512px;
+    margin: 30px;
+    background-color: white;
+    float: left;
+}
+
+div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 30px;
+    height:30px;
+    border: 1px solid black;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+#sliderVal {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 260px;
+    margin-top: 80px;
+}
+
+#clearButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: blue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    height: 50px;
+}
