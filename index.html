@@ -10,8 +10,8 @@
 <body>
     <h1 class="headline">Etch a Sketch</h1>
     <div id="container"></div>
-    <h4><output id="sliderVal">16 x 16</output></h4>
+    <h4><output id="sliderVal"></output></h4>
     <input id="slider" type="range" min="1" max="64" value="16" oninput="sliderChange(this.value)">
-    <button id='clearButton'>Clear</button>
+    <button id="clearButton" onmousedown="clearNet()">Clear</button>
 </body>
 </html>

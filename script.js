@@ -9,7 +9,8 @@ function createNet(netSize, widthNet, heightNet) {
             iDiv.style.width = widthNet;
             iDiv.style.height = heightNet;
             iDiv.style.backgroundColor = "white";
-            document.getElementById('container').appendChild(iDiv).addEventListener("mousemove", function() {
+            document.getElementById('container').appendChild(iDiv);
+            iDiv.addEventListener("mousemove", function() {
                 iDiv.style.backgroundColor = "black";
             }); 
             
@@ -24,7 +25,7 @@ function deleteNet() {
     }
 }
 
-function clearNet() {
+function changeBackgroundToWhite() {
     deleteNet();
     createNet(netSize, size + "px", size + "px");
 }
@@ -37,8 +38,15 @@ function sliderChange(val) {
     createNet(val, size + "px", size + "px");
 }
 
-const clear = document.getElementById('clearButton');
-clear.addEventListener("mousedown", function() {
-    clear.style.fontSize = "25px"
-    clear.style.border = "5px solid blue"
-});
+function clearNet() {
+    const button = document.getElementById("clearButton");
+    button.addEventListener("mousedown", function() {
+        button.style.fontSize = "24px";
+        button.style.border = "3px solid blue";
+    });
+    button.addEventListener("mouseup", function() {
+        button.style.fontSize = "20px";
+        button.style.border = "2px solid blue";
+        changeBackgroundToWhite();
+    })
+}

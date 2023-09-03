@@ -33,19 +33,17 @@ div {
 
 #sliderVal {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 260px;
     margin-top: 80px;
 }
 
 #clearButton {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 200px;
+    height: 50px;
     margin-top: 30px;
     color: blue;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 200px;
-    height: 50px;
+    border: 2px solid blue;
+    justify-content: center;
+    align-items: center;
 }
